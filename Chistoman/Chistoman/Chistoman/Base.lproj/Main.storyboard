@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Black.ttf">
+            <string>Montserrat-Black</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chistoman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_photo" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-n8-xBZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLm-Jx-h1F">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЧИСТОМЕН" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igv-iP-7Od">
+                                        <rect key="frame" x="87" y="90" width="201" height="39.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пожалуйста, авторизуйтесь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-ck-N7t">
+                                        <rect key="frame" x="85" y="198" width="205.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="xG8-U1-lDq">
+                                        <rect key="frame" x="62.5" y="223.5" width="250" height="170"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfG-QD-Usa" customClass="DesignableView" customModule="Chistoman" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="52"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nyY-M9-x1j">
+                                                        <rect key="frame" x="30" y="17" width="190" height="18"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="nyY-M9-x1j" firstAttribute="centerY" secondItem="dfG-QD-Usa" secondAttribute="centerY" id="bHa-he-Q2y"/>
+                                                    <constraint firstItem="nyY-M9-x1j" firstAttribute="width" secondItem="dfG-QD-Usa" secondAttribute="width" constant="-60" id="mVB-sU-NYj"/>
+                                                    <constraint firstItem="nyY-M9-x1j" firstAttribute="centerX" secondItem="dfG-QD-Usa" secondAttribute="centerX" id="ot0-JD-BdF"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v71-LO-C3a" customClass="DesignableView" customModule="Chistoman" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="59" width="250" height="52"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHq-RU-vOV">
+                                                        <rect key="frame" x="30" y="17.5" width="190" height="18"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="XHq-RU-vOV" firstAttribute="centerY" secondItem="v71-LO-C3a" secondAttribute="centerY" id="McV-He-GOy"/>
+                                                    <constraint firstItem="XHq-RU-vOV" firstAttribute="width" secondItem="v71-LO-C3a" secondAttribute="width" constant="-60" id="RgS-0M-8QA"/>
+                                                    <constraint firstItem="XHq-RU-vOV" firstAttribute="centerX" secondItem="v71-LO-C3a" secondAttribute="centerX" id="e1d-w7-zaR"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kac-yX-Kcd" customClass="DesignableButton" customModule="Chistoman" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="118" width="250" height="52"/>
+                                                <color key="backgroundColor" red="0.0039215686274509803" green="0.67450980392156867" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                                <state key="normal" title="Войти">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="170" id="oJq-UA-eZV"/>
+                                            <constraint firstAttribute="width" constant="250" id="uIR-tp-Tnp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ftn-Gs-UqU">
+                                        <rect key="frame" x="102.5" y="409.5" width="170" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVR-yX-abb" customClass="DesignableButton" customModule="Chistoman" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" red="0.31727063655853271" green="0.50560170412063599" blue="0.72157996892929077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gVR-yX-abb" secondAttribute="height" multiplier="1:1" id="vmJ-0I-OMJ"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal" image="VK_Logo"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bB-qa-ece" customClass="DesignableButton" customModule="Chistoman" customModuleProvider="target">
+                                                <rect key="frame" x="60" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" red="0.23353716731071472" green="0.34218418598175049" blue="0.61612963676452637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="3bB-qa-ece" secondAttribute="height" multiplier="1:1" id="WQv-fQ-33n"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal" image="FB-f-Logo__blue_50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3V-oK-UnM" customClass="DesignableButton" customModule="Chistoman" customModuleProvider="target">
+                                                <rect key="frame" x="120" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" red="0.93363499641418457" green="0.51125514507293701" blue="0.0247934740036726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="n3V-oK-UnM" secondAttribute="height" multiplier="1:1" id="rUC-Jr-dpm"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal" image="ok-znak-orange"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Iag-ln-Wco"/>
+                                            <constraint firstItem="n3V-oK-UnM" firstAttribute="width" secondItem="n3V-oK-UnM" secondAttribute="height" multiplier="1:1" id="TCz-OS-jkc"/>
+                                            <constraint firstItem="3bB-qa-ece" firstAttribute="width" secondItem="3bB-qa-ece" secondAttribute="height" multiplier="1:1" id="gU8-nB-4je"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-ob-tfG">
+                                        <rect key="frame" x="62.5" y="547" width="250" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awy-Zh-Rfv" customClass="DesignableButton" customModule="Chistoman" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                                <color key="backgroundColor" red="0.098039215686274508" green="0.63137254901960782" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                                <state key="normal" title="Зарегистрироваться">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGu-Q9-fbG" customClass="DesignableButton" customModule="Chistoman" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60" width="250" height="50"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                                <state key="normal" title="Забыли пароль?">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Esi-Vy-QLR"/>
+                                            <constraint firstAttribute="height" constant="110" id="qKC-br-2ge"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ftn-Gs-UqU" firstAttribute="centerX" secondItem="OLm-Jx-h1F" secondAttribute="centerX" id="0n9-PI-cec"/>
+                                    <constraint firstItem="xG8-U1-lDq" firstAttribute="centerY" secondItem="OLm-Jx-h1F" secondAttribute="centerY" constant="-25" id="CKP-mY-QaE"/>
+                                    <constraint firstItem="Ftn-Gs-UqU" firstAttribute="top" secondItem="xG8-U1-lDq" secondAttribute="bottom" constant="16" id="Hyi-QW-FDk"/>
+                                    <constraint firstItem="igv-iP-7Od" firstAttribute="top" secondItem="OLm-Jx-h1F" secondAttribute="top" constant="90" id="T34-4B-Ur5"/>
+                                    <constraint firstItem="hcg-ck-N7t" firstAttribute="centerX" secondItem="OLm-Jx-h1F" secondAttribute="centerX" id="e7h-Fm-phI"/>
+                                    <constraint firstItem="xG8-U1-lDq" firstAttribute="top" secondItem="hcg-ck-N7t" secondAttribute="bottom" constant="8" id="ssg-7a-lQ3"/>
+                                    <constraint firstItem="xG8-U1-lDq" firstAttribute="centerX" secondItem="OLm-Jx-h1F" secondAttribute="centerX" id="tjr-sd-iUZ"/>
+                                    <constraint firstItem="qTX-ob-tfG" firstAttribute="centerX" secondItem="OLm-Jx-h1F" secondAttribute="centerX" id="w2X-IJ-EO1"/>
+                                    <constraint firstItem="igv-iP-7Od" firstAttribute="centerX" secondItem="OLm-Jx-h1F" secondAttribute="centerX" id="wZY-tL-TX1"/>
+                                    <constraint firstAttribute="bottom" secondItem="qTX-ob-tfG" secondAttribute="bottom" constant="10" id="xKm-Bm-ibP"/>
+                                    <constraint firstItem="hcg-ck-N7t" firstAttribute="top" relation="greaterThanOrEqual" secondItem="igv-iP-7Od" secondAttribute="bottom" constant="50" id="yeL-OK-5Wh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mgk-n8-xBZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Mda-wS-jpf"/>
+                            <constraint firstItem="OLm-Jx-h1F" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OCW-ZD-P02"/>
+                            <constraint firstItem="OLm-Jx-h1F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Thj-Ku-PF9"/>
+                            <constraint firstItem="OLm-Jx-h1F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f6a-i1-y9Q"/>
+                            <constraint firstItem="Mgk-n8-xBZ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="ka5-UO-acz"/>
+                            <constraint firstItem="Mgk-n8-xBZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oiw-U6-iNd"/>
+                            <constraint firstItem="OLm-Jx-h1F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xZT-dV-CEz"/>
+                            <constraint firstItem="Mgk-n8-xBZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zi2-Ul-hUJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="vfE-mL-FBP">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="170"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31c-n3-lM5" customClass="DesignableView" customModule="Chistoman" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="52"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SqF-0l-XjD">
+                                    <rect key="frame" x="30" y="17" width="190" height="18"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="SqF-0l-XjD" firstAttribute="centerY" secondItem="31c-n3-lM5" secondAttribute="centerY" id="BUa-pQ-bVN"/>
+                                <constraint firstItem="SqF-0l-XjD" firstAttribute="width" secondItem="31c-n3-lM5" secondAttribute="width" constant="-60" id="TTj-Lv-phZ"/>
+                                <constraint firstItem="SqF-0l-XjD" firstAttribute="centerX" secondItem="31c-n3-lM5" secondAttribute="centerX" id="xwp-jx-jIf"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTd-lr-5dq" customClass="DesignableView" customModule="Chistoman" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="59" width="250" height="52"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ju9-q8-1mN">
+                                    <rect key="frame" x="30" y="17.5" width="190" height="18"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Ju9-q8-1mN" firstAttribute="centerX" secondItem="bTd-lr-5dq" secondAttribute="centerX" id="9f5-As-k0T"/>
+                                <constraint firstItem="Ju9-q8-1mN" firstAttribute="width" secondItem="bTd-lr-5dq" secondAttribute="width" constant="-60" id="fXA-cA-2aK"/>
+                                <constraint firstItem="Ju9-q8-1mN" firstAttribute="centerY" secondItem="bTd-lr-5dq" secondAttribute="centerY" id="twp-JZ-e7T"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g9-Ul-8X5" customClass="DesignableButton" customModule="Chistoman" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="118" width="250" height="52"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.67450980390000004" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                            <state key="normal" title="Войти">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="V2h-mO-eP8"/>
+                        <constraint firstAttribute="width" constant="250" id="nPX-Zh-yeT"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="jjE-CT-MxA"/>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="-426.39999999999998" y="2.2488755622188905"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FB-f-Logo__blue_50" width="50" height="50"/>
+        <image name="VK_Logo" width="2500" height="2500"/>
+        <image name="main_photo" width="1880" height="1180"/>
+        <image name="ok-znak-orange" width="404" height="404"/>
+    </resources>
+</document>
